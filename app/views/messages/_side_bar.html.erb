@@ -1,7 +1,7 @@
 <div class="side-bar">
   <div class="top-side-bar">
     <div class="top-side-bar-name">
-    <a href="#">Tom</a>
+    <%= link_to current_user.name, edit_user_path(current_user.id), method: :get %>
     </div>
     <div class="create-chat">
     <a href="#">チャットを作成する</a>
