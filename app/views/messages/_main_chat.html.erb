@@ -12,36 +12,7 @@
     </div>
   </div>
   <div class="messages">
-    <div class="message">
-      <div class="upper-message">
-        <div class="message-user">
-        棕棕
-        </div>
-        <div class="message-date">
-        2020/03/10 (WEN) 15:38
-        </div>
-      </div>
-      <div class="lower-message">
-        <div class="message-content">
-        棕棕爱主主
-        </div>
-      </div>
-    </div>
-    <div class="message">
-      <div class="upper-message">
-        <div class="message-user">
-        主主
-        </div>
-        <div class="message-date">
-        2020/03/10 (WEN) 15:38
-        </div>
-      </div>
-      <div class="lower-message">
-        <div class="message-content">
-        主主也爱棕棕
-        </div>
-      </div>
-    </div>
+    <%= render partial: 'message', collection: @messages %>
   </div>  
   <%= form_with model: [@room, @message], class: 'form', local: true do |f| %>
   <div class="form-input">
